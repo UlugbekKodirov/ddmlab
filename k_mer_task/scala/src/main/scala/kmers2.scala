@@ -1,0 +1,26 @@
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkConf
+
+package object kmer {
+
+        def main(args: Array[String]) {
+                val conf = new SparkConf().setAppName("Kmers")
+                val sc = new SparkContext(conf)
+
+                val textFile = sc.textFile("hdfs:///user/hadoop/test/t100.txt")
+                val counts = textFile.flatMap(line => get_kmers(line.toString, 3)).map(word => (word, 1)).reduceByKey(_ + _)
+		counts.saveAsTextFile("hdfs:///user/hadoop/test/spark_scala_kmer")
+        }
+
+        def get_kmers(line: String, k: Int): Array[String]={
+                //var line = input.toString
+                var kmers = Array[String]()
+                val len = line.length()
+                for (i <- 0 until len-k){
+                        kmers = kmers:+line.slice(i,i+k)
+                }
+                return kmers
+        }
+}
+

@@ -1,0 +1,64 @@
+KMER SUBSTRING BENCHMARKING - 3k, 100000steps:
+        -nltk.ngrams(generator) -> set: 14.880543231964111
+        -slicing(list) -> set: 13.28250002861023
+        -slicing(generator) -> set: 11.948519229888916
+        -slicing - adding to set: 12.312773704528809
+        -custom nltk(list) -> set: 19.768988132476807
+        -custom nltk(generator) -> set: 18.423821210861206
+        -custom nltk - adding to set: 18.911576747894287
+KMER SUBSTRING BENCHMARKING - 4k, 100000steps:
+        -nltk.ngrams(generator) -> set: 14.458341121673584
+        -slicing(list) -> set: 16.88761591911316
+        -slicing(generator) -> set: 12.184212446212769
+        -slicing - adding to set: 12.461632251739502
+        -custom nltk(list) -> set: 19.406430959701538
+        -custom nltk(generator) -> set: 19.04931664466858
+        -custom nltk - adding to set: 19.426119565963745
+KMER SUBSTRING BENCHMARKING - 5k, 100000steps:
+        -nltk.ngrams(generator) -> set: 15.89164400100708
+        -slicing(list) -> set: 12.760298490524292
+        -slicing(generator) -> set: 11.65630555152893
+        -slicing - adding to set: 12.548303365707397
+        -custom nltk(list) -> set: 20.6316556930542
+        -custom nltk(generator) -> set: 28.04204797744751
+        -custom nltk - adding to set: 21.439178943634033
+KMER SUBSTRING BENCHMARKING - 6k, 100000steps:
+        -nltk.ngrams(generator) -> set: 16.949981451034546
+        -slicing(list) -> set: 13.464654445648193
+        -slicing(generator) -> set: 12.246031045913696
+        -slicing - adding to set: 12.336382865905762
+        -custom nltk(list) -> set: 21.936996936798096
+        -custom nltk(generator) -> set: 20.231613636016846
+        -custom nltk - adding to set: 21.271985292434692
+KMER SUBSTRING BENCHMARKING - 7k, 100000steps:
+        -nltk.ngrams(generator) -> set: 17.110922813415527
+        -slicing(list) -> set: 13.422175884246826
+        -slicing(generator) -> set: 12.060182094573975
+        -slicing - adding to set: 12.4510178565979
+        -custom nltk(list) -> set: 19.9837806224823
+        -custom nltk(generator) -> set: 18.6134672164917
+        -custom nltk - adding to set: 18.594314098358154
+KMER SUBSTRING BENCHMARKING - 8k, 100000steps:
+        -nltk.ngrams(generator) -> set: 16.679665088653564
+        -slicing(list) -> set: 12.878313302993774
+        -slicing(generator) -> set: 11.552667617797852
+        -slicing - adding to set: 12.387078285217285
+        -custom nltk(list) -> set: 20.94891047477722
+        -custom nltk(generator) -> set: 19.013771295547485
+        -custom nltk - adding to set: 19.89451503753662
+KMER SUBSTRING BENCHMARKING - 9k, 100000steps:
+        -nltk.ngrams(generator) -> set: 19.375991106033325
+        -slicing(list) -> set: 13.667603731155396
+        -slicing(generator) -> set: 12.000214576721191
+        -slicing - adding to set: 12.837020874023438
+        -custom nltk(list) -> set: 21.92786478996277
+        -custom nltk(generator) -> set: 19.84694790840149
+        -custom nltk - adding to set: 20.522130727767944
+KMER SUBSTRING BENCHMARKING - 10k, 100000steps:
+        -nltk.ngrams(generator) -> set: 17.507920742034912
+        -slicing(list) -> set: 13.145356893539429
+        -slicing(generator) -> set: 11.683017253875732
+        -slicing - adding to set: 12.50559377670288
+        -custom nltk(list) -> set: 21.520175218582153
+        -custom nltk(generator) -> set: 19.66239047050476
+        -custom nltk - adding to set: 20.368334770202637

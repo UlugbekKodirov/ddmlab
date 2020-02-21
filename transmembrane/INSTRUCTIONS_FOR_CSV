@@ -1,0 +1,4 @@
+1. Launch preprocess_csv.py
+2. Launch vectorizer_csv.py
+3. Submit spark job with decision_tree.py:
+

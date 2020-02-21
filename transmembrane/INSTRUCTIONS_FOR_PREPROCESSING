@@ -1,0 +1,16 @@
+1. Use the following Unix command over the dataset:
+    cut -d ' ' -f 1
+    This code will delete the remainder of the UnirefID line:
+    ">UnirefID asdf asdf asdf" will be transformed into ">UnirefID"
+
+2. Launch change.py over the output of the previous step, follow the instructions of change.py. The output will be in
+    the following format:
+    UniRef90_Q6GZX1 MNAKYDTDQGVGRMLFLGTIGLAVVVGGLMAYGYYYDGKTPSSGTSFHTASPSFSSRYRY
+
+3. Launch k-mer-presence.py over the output of the previous step. Output:
+    ('UnirefID', 'K-mer1 K-mer2 ... K-merN')
+
+4. Launch vectorizer.py over the output of the previous step in order to get vectors. Output:
+    1/0 (label) position:1 ...
+
+I know it's inconvinient, I willto make one file for preprocessing!!!
